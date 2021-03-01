@@ -1,0 +1,139 @@
+/* Footer */
+.footer {
+    background-color: var(--background-color-blue);
+  
+    & .item:first-child {
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    & .address {
+      display: block;
+      margin-bottom: 9px;
+  }
+
+    & .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  
+
+    & .info {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+  }
+}
+    
+  .address {
+    color: var(--text-title-white);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .footer1 {
+    margin-right: 70px;
+    width: 231px;
+    height: 81px;
+  }
+ 
+  
+  /* footer second-part*/
+  .footer2 {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-second-part {
+    width: 206px;
+    height: 80px;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+    
+  }
+  
+  .footer-second-title {
+    Line-height: 16.41px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    
+    .footer-third-part 
+    & {
+      display: flex;
+      margin: 0px;
+       
+      height: 16px;
+    }
+    
+  }
+  
+  /* footer third part */
+  
+  .footer-third-part {
+    margin-left: 93px;
+  
+  }
+  
+  .footer-form {
+    display: flex;
+    align-items: center;
+   
+    background-color: var(--background-color-blue);
+    margin-top: 20px;
+
+    & .modal-form-input {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.6);
+      padding-left: 16px;
+      width: 358px;
+      height: 50px;
+    }
+  }
+  
+ 
+  
+  .button-footer-form {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: var(--accent-color);
+    color: var(--text-title-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    padding-left: 29px;
+
+      &::after   { 
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      background-image: url(../images/icon-send.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+  }  
+  }
+  .footer-send-icon {
+    fill: var(--text-title-white);
+    width: 24px;
+    height: 24px;
+  }

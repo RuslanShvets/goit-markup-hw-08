@@ -1,0 +1,24 @@
+/* Utils */
+@import "./utils/variables";
+@import "./utils/visualy-hidden";
+
+/* Base */
+
+@import "./base/container";
+
+/* Components */
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/qualities";
+@import "./components/team-section";
+@import "./components/social";
+@import "./components/companies";
+@import "./components/product-work";
+@import "./components/footer";
+@import "./components/backdrop";
+
+// Portfolio-Components
+
+@import "./porfolio-components/portfolio";
+@import "./porfolio-components/portfolio-list"; 

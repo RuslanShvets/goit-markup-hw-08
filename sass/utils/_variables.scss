@@ -1,0 +1,35 @@
+:root {
+    --general-color-text: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --contacts-color: rgba(255, 255, 255, 0.6);
+    --background-color-blue: #2f303a;
+    --text-title-white: #ffffff;
+    --bgc-button: #e5e5e5;
+    --bgc-team: #f5f4fa;
+    
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--general-color-text);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+
+    margin: 0px;
+    padding: 0px;
+  
+  }
+    

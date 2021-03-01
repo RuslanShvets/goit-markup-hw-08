@@ -1,0 +1,102 @@
+/* portfolio cards */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    padding-top: 50px;
+    padding-left: 0px;
+    margin: 0px;
+
+    & .text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.87;
+      margin: 0;
+      padding-left: 24px;
+      padding-bottom: 20px;
+      padding-right: 24px;
+      font-size: 16px;
+      letter-spacing: 0.03em;
+
+      color: var(--general-color-text);
+    }
+    
+    & .item {
+      width: 370px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      border: 1px solid #eeeeee;
+      text-align: left;
+
+      &:nth-child(3n) {
+        margin-right: 0px;
+      }
+
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 0px;
+      }
+    
+      
+    }
+    
+    & .link {
+      display: block;
+      width: 370px;
+      box-shadow: none;
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+       &:hover,
+       &:focus {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        &:hover .overlay,
+        &:focus .overlay {
+          transform: translateY(0);
+        }
+    }
+      :visited {
+      color: var(--general-color-text);
+    }
+    }  
+    
+    & .title {
+      color: var(--title-text-color);
+    
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+      margin-top: 20px;
+      padding-left: 24px;
+    }
+        
+  }
+  .img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--text-title-white);
+    margin: 0 auto;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+  }
+
+  
+  .img-port {
+    margin-top: 0px;
+  }
+  
