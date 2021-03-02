@@ -116,6 +116,7 @@
   
   .agreement {
     @include centeredFlex ();
+    width: 100%;
     margin-bottom: 30px;
     font-size: 12px;
     line-height: 1.16px;
@@ -164,7 +165,7 @@
   }
   .checkbox:checked + .check-icon {
     background-color: $accent-text-color;
-    background-image: url("../../imges/icon\ check.svg");
+    background-image: url("../images/icon-check.svg");
     background-size: contain;
     background-origin: border-box;
     border-color: $accent-text-color;

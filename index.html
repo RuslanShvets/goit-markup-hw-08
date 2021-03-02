@@ -15,7 +15,7 @@
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
 <!--Шапка сайта-->
@@ -95,7 +95,7 @@
                 <li class="features__item">
                     <div class="features__container">
                     <svg width="65" height="70" >
-                        <use class="clock" href="./images/sprite.svg#antenna" ></use>
+                        <use class="clock" href="./images/sprite.svg#antena" ></use>
                     </svg>
                     </div>
                  <h3 class="features__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -510,6 +510,8 @@
                     <use href="./images/sprite.svg#close"></use>
                 </svg>
             </button>
+
+            
             <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
             <div class="form js-speaker-form" autocomplete="off">
                 <div class="form__field">
@@ -549,17 +551,7 @@
      </div>
             <!-- <button data-modal-close>Закрыть</button> -->
    
-    <script>
-        (() => {
-                document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-                    e.preventDefault();
-
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-                });
-            })();
-    </script>
+    
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
