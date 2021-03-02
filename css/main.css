@@ -503,7 +503,7 @@ textarea {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url("../../images/icon-send.svg");
+  background-image: url("../images/icon-send.svg");
 }
 
 .send-button {
