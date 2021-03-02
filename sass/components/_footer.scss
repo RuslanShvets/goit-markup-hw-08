@@ -1,139 +1,173 @@
-/* Footer */
-.footer {
-    background-color: var(--background-color-blue);
-  
-    & .item:first-child {
-      display: block;
-      margin-bottom: 9px;
-    }
-
-    & .address {
-      display: block;
-      margin-bottom: 9px;
-  }
-
-    & .logo {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  
-
-    & .info {
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    text-decoration: none;
-  }
-}
-    
-  .address {
-    color: var(--text-title-white);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-  }
-  .footer1 {
-    margin-right: 70px;
-    width: 231px;
-    height: 81px;
-  }
- 
-  
-  /* footer second-part*/
-  .footer2 {
+.footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+  
+    @media screen and (min-width:768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      width: 768px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @media screen and (min-width:1200px) {
+      flex-wrap: nowrap;
+      width: 1200px;
+    }
   }
-  .footer-second-part {
-    width: 206px;
-    height: 80px;
-    margin-top: 0px;
-    margin-left: 0px;
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+  
+     @media screen and (min-width:768px) and (max-width:1199px) {
+    width: 50%;
+    margin-top: 0;
+     }
+    @media screen and (min-width:1200px) {
+    display: block;
+    margin-top: 12px;
+   }
+  }
+  .footer-social:not(:last-child) {
+    @media screen and (min-width:1200px) {
+    margin-right: 93px;
+    }
+  }
+  .footer-social.subscribe {
+    width: 100%;
+    margin-top: 60px;
+    @media screen and (min-width:1200px) {
+    margin-top: 0;
+    }
     
-    
+  }
+  .footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      width: 50%;
+    }
+    @media screen and (min-width:1200px) {
+    margin-right: 70px;
+    align-items: start;
+    }
+  }
+  .address__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:1200px) {
+    width: 231px;
+    align-items: start;
+    }
   }
   
-  .footer-second-title {
-    Line-height: 16.41px;
+  .studio-logo-footer {
+    color: $background-color;
+  }
+  .address__title {
+    color: $background-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  .address__tel {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    color: $footer-color;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    @media screen and (min-width:1200px) {
+    display: block;
+    }
+  }
+  .address__email {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    color: $footer-color;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    margin-bottom: 9px;
+    text-decoration: none;
+  
+    @media screen and (min-width:1200px) {
+    display: block;
+    }
+  }
+  .address__thumb {
+    display: flex;
+    margin-bottom: auto;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .connect {
+    color: $background-color;
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.143px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  }
+  /*----------SUBSCRIBE----------*/
+  .subscribe-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  
+  @media screen and (min-width:768px) {
+    align-items: center;
+  }
+  @media screen and (min-width:1200px) {
+  width: unset;
+  align-items: start;
+  flex-direction: row;
+  }
+  }
+  .email-input {
     margin-bottom: 20px;
-    margin-top: 0px;
-    
-    .footer-third-part 
-    & {
-      display: flex;
-      margin: 0px;
-       
-      height: 16px;
-    }
-    
-  }
   
-  /* footer third part */
-  
-  .footer-third-part {
-    margin-left: 93px;
-  
-  }
-  
-  .footer-form {
-    display: flex;
-    align-items: center;
-   
-    background-color: var(--background-color-blue);
-    margin-top: 20px;
-
-    & .modal-form-input {
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      box-sizing: border-box;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-      background-color: transparent;
-      color: rgba(255, 255, 255, 0.6);
-      padding-left: 16px;
-      width: 358px;
-      height: 50px;
-    }
-  }
-  
- 
-  
-  .button-footer-form {
-    display: flex;
-    align-items: center;
-    width: 200px;
+    width: 100%;
     height: 50px;
-    font-size: 16px;
-    line-height: 30px;
-    background-color: var(--accent-color);
-    color: var(--text-title-white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 15px 16px 15px 16px;
+    background-color: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    margin-left: 12px;
-    padding-left: 29px;
-
-      &::after   { 
-      content: '';
-      display: block;
-      width: 24px;
-      height: 24px;
-      margin-left: 10px;
-      background-image: url(../images/icon-send.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-  }  
-  }
-  .footer-send-icon {
-    fill: var(--text-title-white);
-    width: 24px;
-    height: 24px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    color: $background-color;
+  
+    @media screen and (min-width:768px) {
+      width: 460px;
+    }
+  
+    @media screen and (min-width:1200px) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0px;
+    }
   }

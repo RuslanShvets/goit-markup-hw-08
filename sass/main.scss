@@ -1,24 +1,22 @@
-/* Utils */
+// Utils
 @import "./utils/variables";
-@import "./utils/visualy-hidden";
+@import "./utils/mixines";
+@import "./utils/placeholders";
 
-/* Base */
+// Base
+@import "./base/base";
 
-@import "./base/container";
-
-/* Components */
-
-@import "./components/header";
+// Components
+@import "./components/page-header";
 @import "./components/hero";
-@import "./components/qualities";
-@import "./components/team-section";
-@import "./components/social";
-@import "./components/companies";
-@import "./components/product-work";
+@import "./components/buttons";
+@import "./components/features";
+@import "./components/work";
+@import "./components/team";
+@import "./components/our-clients";
 @import "./components/footer";
-@import "./components/backdrop";
-
-// Portfolio-Components
-
-@import "./porfolio-components/portfolio";
-@import "./porfolio-components/portfolio-list"; 
+@import "./components/portfolio";
+@import "./components/modal-window";
+@import "./components/menu";
+@import "./components/contacts";
+@import "./components/social";
