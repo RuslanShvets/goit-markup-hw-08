@@ -768,6 +768,10 @@ textarea {
   width: 100%;
 }
 
+.team__item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .team__item:not(:last-child) {
   margin-bottom: 30px;
 }
