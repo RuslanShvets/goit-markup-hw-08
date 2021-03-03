@@ -106,11 +106,13 @@
   .actions {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    // align-content: space-between;
+    margin: 0 auto;
     padding: 0;
     padding-bottom: 24px;
-    margin-right: 32px;
-    margin-left: 32px;
+    max-width: 206px;
+   
     list-style: none;
   }
   .actions-footer {
@@ -125,6 +127,8 @@
     @include centeredFlex ();
     width: 44px;
     height: 44px;
+    
+    
   }
   .link > .link-icon-footer {
     @include centeredFlex ();
