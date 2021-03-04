@@ -24,15 +24,17 @@
     z-index: 3;
     top: 50%;
     left: 50%;
-    min-width: 450px;
-    height: 100%;
-    // min-height: 609px;
+    width: 100%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
     padding: 40px;
     text-align: center;
     background-color: $background-color;
   
     transform: translate(-50%, -50%) scale(1);
     transition: transform $timing-function;
+    overflow: scroll;
   
     @media screen and (min-width:1200px) {
     min-width: 528px;
@@ -120,12 +122,12 @@
     width: 100%;
     margin-bottom: 30px;
     font-size: 12px;
-    line-height: 1.16px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
   
     @media screen and (min-width:1200px) {
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     }
   }
   
@@ -140,6 +142,7 @@
   }
   
   .policy {
+    display: inline-flex;
     text-decoration: underline;
     margin-left: 5px;
     color: $accent-text-color;
@@ -157,9 +160,11 @@
     position: absolute;
   }
   .check-icon {
+    
     display: inline-block;
     width: 16px;
     height: 15px;
+    margin-left: 0px;
     margin-right: 8px;
     border: 2px solid $primary-text-color;
     border-radius: 4px;
