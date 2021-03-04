@@ -37,7 +37,9 @@
     overflow: scroll;
   
     @media screen and (min-width:1200px) {
+      width: 100%;
     min-width: 528px;
+    height: 100%;
     min-height: 581px;
     }
   }
@@ -124,7 +126,8 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-  
+    cursor: pointer;
+
     @media screen and (min-width:1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -152,7 +155,11 @@
     top: 50%;
     left: 15px;
     display: inline-block;
+
+    & :hover {
+      border: 2px solid $accent-text-color;
   }
+}
   .checkbox { 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -160,6 +167,9 @@
     position: absolute;
 
   }
+ 
+
+
   .check-icon {
     
     display: inline-block;
@@ -169,6 +179,10 @@
     margin-right: 8px;
     border: 2px solid $primary-text-color;
     border-radius: 4px;
+
+    & :hover {
+      border: 2px solid $accent-text-color;
+    }
 
    
 
