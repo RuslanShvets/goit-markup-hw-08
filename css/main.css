@@ -103,7 +103,6 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -150,6 +149,7 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0px;
   }
   .contacts-list__item:not(:last-child) {
     margin-bottom: 10px;
@@ -166,6 +166,7 @@ textarea {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    color: #757575;
     text-decoration: none;
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -224,11 +225,12 @@ textarea {
 .hero {
   width: 100%;
   max-width: 1600px;
+  height: 100%;
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero/header-mobile.jpg");
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero/header-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-right: auto;
@@ -1688,6 +1690,12 @@ textarea {
   .icon-menu:hover, .icon-menu:focus {
     fill: #2196f3;
   }
+  .mobile-site-nav__list {
+    padding: 0px;
+  }
+  .mobile-site-nav__list-item {
+    padding: 0px;
+  }
   .mobile-site-nav__list-item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -1707,6 +1715,9 @@ textarea {
   .mobile-site-nav__list-link--active {
     color: #2196f3;
   }
+  .mobile-contacts-list {
+    padding: 0px;
+  }
   .mobile-contacts-list__item:not(:last-child) {
     margin-bottom: 21px;
   }
@@ -1721,7 +1732,7 @@ textarea {
     line-height: 1.17;
   }
   .mobile-contacts-list__link--mail {
-    color: #212121;
+    color: #757575;
     font-size: 24px;
     line-height: 1.17;
   }
@@ -1729,6 +1740,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0px;
   }
   .mobile-social-lihks__item {
     display: -webkit-box;
@@ -1749,6 +1761,8 @@ textarea {
   }
   .mobile-social-lihks__link {
     display: inline-block;
+    -ms-flex-line-pack: center;
+        align-content: center;
     color: #2196f3;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -1760,7 +1774,7 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .mobile-menu {
-    padding: 48px 40px;
+    padding: 40px 40px;
   }
   .mobile-contacts-list__item:not(:last-child) {
     margin-bottom: 32px;
@@ -1769,9 +1783,15 @@ textarea {
     font-size: 34px;
     line-height: 1.18;
   }
+  .mobile-social-lihks {
+    width: 100%;
+  }
   .mobile-social-lihks__link {
     font-size: 18px;
     line-height: 1.22;
+  }
+  .mobile-social-lihks .item {
+    width: 100%;
   }
 }
 

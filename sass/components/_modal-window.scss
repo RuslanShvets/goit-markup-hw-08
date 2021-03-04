@@ -158,6 +158,7 @@
     -moz-appearance: none;
     appearance: none;
     position: absolute;
+
   }
   .check-icon {
     
@@ -168,6 +169,10 @@
     margin-right: 8px;
     border: 2px solid $primary-text-color;
     border-radius: 4px;
+
+   
+
+   
   }
   .checkbox:checked + .check-icon {
     background-color: $accent-text-color;

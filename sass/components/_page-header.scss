@@ -25,7 +25,7 @@
     text-decoration: none;
 
     @media screen and (min-width:768px) {
-        margin-right: 88px;
+        
         padding-top: 26px;
         padding-bottom: 26px; 
     }
@@ -62,6 +62,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin: 0px;
 
         &__item {
 
@@ -78,6 +79,7 @@
            font-size: 12px;
            line-height: 1.17;
            letter-spacing: 0.02em;
+           color: $text-color;
            text-decoration: none;
            transition: color $timing-function;
 
@@ -117,6 +119,8 @@
             font-size: 14px;
             line-height: 1.14;   
             color: $text-color; 
+
+            
             }
 
         &__item {
