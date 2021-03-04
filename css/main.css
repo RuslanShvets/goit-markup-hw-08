@@ -575,7 +575,7 @@ textarea {
 }
 
 .team__position {
-  color: var(--text-color);
+  color: #757575;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
