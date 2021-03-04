@@ -1552,6 +1552,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  width: 370px;
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.16;
